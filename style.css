@@ -155,9 +155,9 @@ body{
      
     width: clamp(100px, 100%, 300px);
     aspect-ratio: 1 / 1; 
-    background-color: var(--color2);
+    background-color: #2408087e;
     
-    border: 5px solid #ffffff;
+    border: 2px solid #ffffff6b;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -171,7 +171,7 @@ body{
     font-family: var(--font);
     font-size: 50px;
     padding: 20px;
-    background-color: var(--color1);
+    background-color: #af9898c4;
     cursor: pointer;
     transition: 0.3s;
     border: 2px solid #ffffff;
