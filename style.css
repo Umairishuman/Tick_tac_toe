@@ -112,7 +112,7 @@ body{
 
     flex-direction: column;
 
-    /* display: none; */
+    display: none;
 }
 #game #score{
     /* Score setting */
@@ -196,7 +196,17 @@ body{
 #board .square img:hover{
     transform: scale(1.1);
 }
-
+#game p{
+    /* Game setting */
+    color: #c7adad;
+    font-family: var(--font);
+    font-size: 15px;
+    /* margin: 10px; */
+    width: 70%;
+    background-color: #24080875;
+    padding: 20px;
+    border-radius: 10px;
+}
 
 
 
