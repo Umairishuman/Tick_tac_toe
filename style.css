@@ -1,0 +1,191 @@
+@font-face {
+    font-family: Vampire Wars;
+    src: url("Fonts/VampireWars.ttf");
+}
+@font-face {
+    font-family: Knight Warriors;
+    src: url("Fonts/KnightWarrior.otf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+    /* background setting */
+    background-image: url("Assets/Game_Background.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* Heigh setting */
+    /* height: 100vh; */
+}
+@media screen and (max-width: 768px) {
+    body {
+        background-image: url("Assets/Game_Background_Mobile.png");
+    }
+}
+/* Container is just for reducing the opacity of the background */
+#container{
+    height: 100%;
+    width: 100%;
+
+    background-color: rgba(0, 0, 0, 0.507);
+    background-attachment: fixed;
+}
+#menu{
+    /* Menu setting */
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    opacity: unset;
+    opacity: 1;
+
+    /* Flexbox setting */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    display: none;
+}
+:root{
+    /* Color setting */
+    --color1: #af9898;
+    --color2: #240808;
+    --font: 'Vampire Wars';
+}
+.menu-button{
+    /* Button setting */
+    background-color: var(--color1);
+    color: var(--color2);
+    padding: 15px 20px;
+    border-radius: 0px;
+    font-family: var(--font);
+    margin: 10px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.3s;
+    border: 2px solid #ffffff;
+    transform: skew(-10deg);
+    box-shadow: 0px 0px 10px 0px #000000;
+}
+.menu-button:hover{
+    background-color: var(--color2);
+    color: var(--color1);
+    border: #000000 2px solid;
+}
+
+#difficulty{
+    /* Difficulty setting */
+    /* display: none; */
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    opacity: 1;
+
+    /* Flexbox setting */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    display: none;
+}
+#game{
+    /* Game setting */
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    opacity: 1;
+    padding: 20px;
+    /* Flexbox setting */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    /* display: none; */
+}
+#game #score{
+    /* Score setting */
+    color: #c7adad;
+    font-family: var(--font);
+    font-size: 15px;
+    margin: 10px;
+    width: 70%;
+    background-color: #24080875;
+    padding: 20px;
+    border-radius: 10px;
+    transform: skew(-10deg);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#score .score-num{
+    /* Score number setting */
+    /* add some good color on black */
+    color: rgb(255, 255, 255);
+}
+#turn #current-turn{
+    /* Turn setting */
+    color: #240808;
+    font-family: var(--font);
+    font-size: 25px;
+    margin: 10px;
+    /* width: 70%; */
+    background-color: #af9898b6;
+    padding: 20px;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#game #board{
+    /* Board setting */
+     
+    width: clamp(100px, 100%, 300px);
+    aspect-ratio: 1 / 1; 
+    background-color: var(--color2);
+    
+    border: 5px solid #ffffff;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    
+    grid-gap: 10px;
+    margin: 10px;
+}
+
+#board .square{
+    /* Square setting */
+    font-family: var(--font);
+    font-size: 50px;
+    padding: 20px;
+    background-color: var(--color1);
+    cursor: pointer;
+    transition: 0.3s;
+    border: 2px solid #ffffff;
+    box-shadow: 0px 0px 5px 0px #7e7979;
+    transition: 0.3s;
+}
+#board .square:hover{
+    background-color: #7e7979;
+}
+#board .square:active{
+    background-color: var(--color2);
+    color: #ffffff;
+}
+
+
+
+

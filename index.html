@@ -6,8 +6,49 @@
     <title>TIC TAC TOE</title>
     <!-- add a little icon to the tab -->
     <link rel="icon" href = "Assets/icon.svg" type = "image/x-icon">
+    <!-- add the css file -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+   <div id="container">
+       
+       <!-- <header>
+           <h1>TIC TAC TOE</h1>
+       </header> -->
+       <div id="menu" class="screen">
+           <button class="menu-button">Player Vs Computer</button>
+           <button class="menu-button">Player vs Player</button>
+           <button class="menu-button">Quit</button>
+       </div>
+       <div id="difficulty" class="screen">
+           <button class="menu-button">Easy</button>
+           <button class="menu-button">Medium</button>
+           <button class="menu-button">Hard</button>
+       </div>
+       <div id="game" class="screen">
+           <div id="score">
+               <h1 id="player1-score">Player 1: <span class="score-num">0</span></h1>
+               <h1 id="player2-score">Player 2: <span class="score-num">0</span></h1>
+               <h1 id="draws">Draws: <span class="score-num">0</span></h1>
+           </div>
+           <div id="turn">
+               <h1 id="current-turn">Player 1 turn </h1>
+           </div>
+           <div id="board">
+                <div class="square"><img src="" alt=""></div>
+                <div class="square"><img src="" alt=""></div>
+                <div class="square"><img src="" alt=""></div>
+                <div class="square"><img src="" alt=""></div>
+                <div class="square"><img src="" alt=""></div>
+                <div class="square"><img src="" alt=""></div>
+                <div class="square"><img src="" alt=""></div>
+                <div class="square"><img src="" alt=""></div>
+                <div class="square"><img src="" alt=""></div>
+           </div>
+           <button id="restart" class="menu-button">Restart</button>
+           <p>Press Escape to GO BACK</p>
+       </div>
+       <script src="tic-tac-toe.js"></script>
+   </div>
 </body>
 </html>
