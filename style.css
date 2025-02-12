@@ -177,6 +177,10 @@ body{
     border: 2px solid #ffffff;
     box-shadow: 0px 0px 5px 0px #7e7979;
     transition: 0.3s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #board .square:hover{
     background-color: #7e7979;
@@ -184,6 +188,13 @@ body{
 #board .square:active{
     background-color: var(--color2);
     color: #ffffff;
+}
+#board .square img{
+    width: 90%;
+    /* object-fit: contain;     */
+}
+#board .square img:hover{
+    transform: scale(1.1);
 }
 
 
